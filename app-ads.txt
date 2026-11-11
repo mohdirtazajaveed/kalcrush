@@ -1,0 +1,4 @@
+# app-ads.txt for Kal Crush
+# Authorised sellers of ad inventory for apps published by Kal Crush.
+# The Google AdMob line (google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0) is added
+# here once the AdMob account is created.
