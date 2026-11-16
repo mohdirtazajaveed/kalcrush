@@ -2,7 +2,7 @@
 (function () {
   if (!window.THREE) return;
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var COLORS = [0xF27BA6, 0x9A5CF0, 0xF6C343, 0x45C8F2, 0x63D9A2, 0xC77DFF];
+  var COLORS = [0x2DD4BF, 0x3B82F6, 0xF6C343, 0x22D3EE, 0x34D399, 0x6366F1];
 
   // a brilliant-cut gem: lathe profile with few segments + flat shading = facets
   function gemGeometry(seg) {
@@ -31,9 +31,9 @@
     var camera = new THREE.PerspectiveCamera(35, 1, 0.1, 100);
     camera.position.set(0, 0, 16);
 
-    scene.add(new THREE.HemisphereLight(0xffffff, 0x6a3fb8, 0.9));
+    scene.add(new THREE.HemisphereLight(0xffffff, 0x1e3a8a, 0.9));
     var key = new THREE.DirectionalLight(0xffffff, 1.25); key.position.set(-4, 6, 8); scene.add(key);
-    var rim = new THREE.DirectionalLight(0xffb3d1, 0.9); rim.position.set(6, -2, 4); scene.add(rim);
+    var rim = new THREE.DirectionalLight(0x7dd3fc, 0.9); rim.position.set(6, -2, 4); scene.add(rim);
     var back = new THREE.PointLight(0x9fd8ff, 0.8, 40); back.position.set(0, 3, -6); scene.add(back);
 
     // positions in viewport-relative units: x,y in -1..1, z depth, s size
