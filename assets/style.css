@@ -372,3 +372,14 @@ canvas.gems3d.on{opacity:1}
 .nav a.btn-dark{transition:transform .2s var(--ease),box-shadow .25s ease,background .2s ease}
 .nav a.btn-dark:hover{transform:translateY(-2px);box-shadow:0 10px 22px -8px rgba(11,18,32,.55)}
 .btn:active,.nav a.btn-dark:active{transform:translateY(0) scale(.96);box-shadow:none;transition-duration:.08s}
+
+/* one uniform page background (no seams between sections) */
+body{background:#F3F7FC}
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background:
+    radial-gradient(45vw 45vw at 0% 15%,rgba(45,212,191,.28),transparent 70%),
+    radial-gradient(50vw 50vw at 100% 45%,rgba(96,165,250,.30),transparent 70%),
+    radial-gradient(45vw 40vw at 45% 105%,rgba(252,211,77,.22),transparent 70%)}
+.has-liquid .liquid{display:none}
+.has-liquid{overflow:visible}
+.section-tint{background:transparent!important;border:0!important}
